@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #01040D;
+  --color-panel: #010109;
+  --color-surface: #0F172A;
+  --color-steel: #1E3ABA;
+  --color-frost: #FFFFFF;
+  --color-muted: #A1A1AA;
+  --color-volt: #2563EB;
+  --color-plasma: #60A5FA;
+  --color-signal: #00B7FF;
+  --color-gold: #665833;
+  --color-bronze: #995E53;
+
+  --font-display: var(--font-rajdhani), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+}
+@layer utilities {
+  .text-gradient {
+    background-image: linear-gradient(135deg, #2563EB 0%, #00B7FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-volt-plasma {
+    background-image: linear-gradient(135deg, #2563EB 0%, #00B7FF 100%);
+  }
+  .shadow-glow {
+    box-shadow: 0 0 40px rgba(0, 183, 255, 0.3);
+  }
+  .animate-chevron-slide {
+    animation: chevron-slide 1.8s ease-in-out infinite;
+  }
+}
+
+@keyframes chevron-slide {
+  0% { transform: translateX(-4px); opacity: 0.4; }
+  50% { transform: translateX(0px); opacity: 1; }
+  100% { transform: translateX(-4px); opacity: 0.4; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes gradient-pan {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+::selection {
+  background-color: #00B7FF;
+  color: #0A0F1C;
+}
