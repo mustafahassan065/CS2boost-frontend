@@ -14,20 +14,20 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Decorative side images to fill empty space on wide screens */}
-      <Image
-        src="/images/gabriel-sleiter.jpg"
-        alt=""
-        width={958}
-        height={539}
-        className="pointer-events-none absolute left-0 top-24 -z-10 hidden w-[220px]  xl:block"
-      />
-      <Image
-        src="/images/gabriel-sleiter.jpg"
-        alt=""
-        width={958}
-        height={539}
-        className="pointer-events-none absolute right-0 top-24 -z-10 hidden w-[220px] scale-x-[-1] opacity-70 xl:block"
-      />
+     <Image
+  src="/images/gabriel-sleiter.jpg"
+  alt=""
+  width={958}
+  height={539}
+  className="pointer-events-none absolute left-0 top-24 z-30 hidden w-[220px] opacity-70 xl:block"
+/>
+<Image
+  src="/images/gabriel-sleiter.jpg"
+  alt=""
+  width={958}
+  height={539}
+  className="pointer-events-none absolute right-0 top-24 z-30 hidden w-[220px] scale-x-[-1] opacity-70 xl:block"
+/>
 
       {/* ================= HERO — narrower container = proportionally shorter ================= */}
       <section className="relative overflow-hidden bg-ink">
