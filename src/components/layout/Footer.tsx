@@ -106,26 +106,27 @@ export default function Footer() {
   </div>
 
   {/* Payment Methods — image, bigger + spans 2 columns for readability */}
-  <div className="col-span-2">
-    <Image
-      src="/images/payment-methods.jpg"
-      alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
-      width={733}
-      height={347}
-      className="w-full max-w-[300px]"
-    />
-  </div>
+  {/* Payment Methods — image, taller not wider, stays in its own column */}
+<div>
+  <Image
+    src="/images/payment-methods.jpg"
+    alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
+    width={733}
+    height={347}
+    className="h-32 w-auto object-contain sm:h-36"
+  />
+</div>
 
-  {/* System Status — image, bigger + spans 2 columns for readability */}
-  <div className="col-span-2">
-    <Image
-      src="/images/system-status.jpg"
-      alt="System Status — All Systems Operational. 100% Secure."
-      width={751}
-      height={372}
-      className="w-full max-w-[300px]"
-    />
-  </div>
+{/* System Status — image, taller not wider, stays in its own column */}
+<div>
+  <Image
+    src="/images/system-status.jpg"
+    alt="System Status — All Systems Operational. 100% Secure."
+    width={751}
+    height={372}
+    className="h-32 w-auto object-contain sm:h-36"
+  />
+</div>
 </div>
 
         <div className="mt-10 border-t border-steel/40 pt-6 text-center text-xs text-muted">
