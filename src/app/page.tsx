@@ -12,7 +12,23 @@ const cards = [
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
+      {/* Decorative side images to fill empty space on wide screens */}
+      <Image
+        src="/images/gabriel-sleiter.jpg"
+        alt=""
+        width={958}
+        height={539}
+        className="pointer-events-none absolute left-0 top-24 -z-10 hidden w-[220px] opacity-70 xl:block"
+      />
+      <Image
+        src="/images/gabriel.jpg"
+        alt=""
+        width={958}
+        height={539}
+        className="pointer-events-none absolute right-0 top-24 -z-10 hidden w-[220px] scale-x-[-1] opacity-70 xl:block"
+      />
+
       {/* ================= HERO — narrower container = proportionally shorter ================= */}
       <section className="relative overflow-hidden bg-ink">
         <div className="mx-auto grid max-w-[950px] grid-cols-1 lg:grid-cols-2">
@@ -59,20 +75,18 @@ export default function Home() {
           </div>
         </div>
         <div className="relative z-10 -mt-3 text-center">
-    <h2 className="font-display text-xl font-bold uppercase tracking-wide text-frost md:text-2xl">
-      Choose Your Service
-    </h2>
-    <p className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.25em] text-signal">
-      Fast. Safe. Professional.
-    </p>
-  </div>
+          <h2 className="font-display text-xl font-bold uppercase tracking-wide text-frost md:text-2xl">
+            Choose Your Service
+          </h2>
+          <p className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.25em] text-signal">
+            Fast. Safe. Professional.
+          </p>
+        </div>
       </section>
 
       {/* ================= CHOOSE YOUR SERVICE — narrower container ================= */}
       <section className="bg-ink">
         <div className="mx-auto max-w-[850px] px-6">
-         
-
           <div className="mt-2 grid grid-cols-2 gap-1.5 sm:grid-cols-3 lg:grid-cols-6">
             {cards.map((c) => (
               <Link key={c.file} href="/order" className="block transition-transform duration-300 hover:-translate-y-1">
@@ -129,6 +143,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
