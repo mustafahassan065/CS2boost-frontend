@@ -88,7 +88,7 @@ export default function Home() {
       <section className="bg-ink pt-2">
         <div className="mx-auto max-w-[1600px] px-6">
           <Image
-            src="/images/ratings2.webp"
+            src="/images/ratings3.jpg"
             alt="25+ Years of Experience, 50,000+ Hours Played, 1,500+ Europe Rank Faceit 2018, 356 World Rank Season 1 Premier, 300+ Offers Completed"
             width={2712}
             height={212}
@@ -101,7 +101,7 @@ export default function Home() {
       <section className="bg-ink">
         <div className="mx-auto max-w-[1600px] px-6">
           <Image
-            src="/images/how-it-works2.webp"
+            src="/images/how-it-works3.jpg"
             alt="How It Works: Place Order, Booster Assigned, Boost In Progress, Order Completed"
             width={2704}
             height={212}
