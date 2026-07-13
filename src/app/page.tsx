@@ -14,20 +14,17 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Decorative side images to fill empty space on wide screens */}
-     <Image
-  src="/images/gabriel-sleiter.jpg"
-  alt=""
-  width={958}
-  height={539}
-  className="pointer-events-none absolute left-0 top-24 z-30 hidden w-[220px] opacity-70 xl:block"
-/>
-<Image
-  src="/images/gabriel-sleiter.jpg"
-  alt=""
-  width={958}
-  height={539}
-  className="pointer-events-none absolute right-0 top-24 z-30 hidden w-[220px] scale-x-[-1] opacity-70 xl:block"
-/>
+     {/* LEFT side stack — Gabriel image + Loyalty Program (rewards table) */}
+<div className="pointer-events-none absolute left-0 top-24 z-30 hidden w-[220px] flex-col gap-4 xl:flex">
+  <Image src="/images/gabriel-sleiter.jpg" alt="" width={958} height={539} className="w-full opacity-70" />
+  <Image src="/images/promo-program.jpg" alt="Loyalty Program — Earn LP with every order" width={958} height={539} className="w-full opacity-90" />
+</div>
+
+{/* RIGHT side stack — Gabriel image (not mirrored) + Loyalty Program (earn rewards CTA) */}
+<div className="pointer-events-none absolute right-0 top-24 z-30 hidden w-[220px] flex-col gap-4 xl:flex">
+  <Image src="/images/gabriel-sleiter.jpg" alt="" width={958} height={539} className="w-full opacity-70" />
+  <Image src="/images/promo-rewards.jpg" alt="Loyalty Program — Earn Rewards" width={958} height={539} className="w-full opacity-90" />
+</div>
 
       {/* ================= HERO — narrower container = proportionally shorter ================= */}
       <section className="relative overflow-hidden bg-ink">
