@@ -56,7 +56,7 @@ export default function Footer() {
     </p>
     <div className="mt-5 flex items-center gap-3">
       {socialLinks.map((s) => (
-        
+        <a
           key={s.label}
           href={s.href}
           target={s.href.startsWith("http") ? "_blank" : undefined}
@@ -110,7 +110,7 @@ export default function Footer() {
   {/* Payment Methods + System Status — fixed, never wraps below */}
   <div className="flex shrink-0 flex-row gap-3">
     <Image
-      src="/images/payment-methods.png"
+      src="/images/payment-methods.jpg"
       alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
       width={733}
       height={347}
@@ -118,7 +118,7 @@ export default function Footer() {
       style={{ height: "160px" }}
     />
     <Image
-      src="/images/system-status.png"
+      src="/images/system-status.jpg"
       alt="System Status — All Systems Operational. 100% Secure."
       width={751}
       height={372}
