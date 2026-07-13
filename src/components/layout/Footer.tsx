@@ -108,7 +108,7 @@ export default function Footer() {
           {/* Payment Methods — image */}
           <div>
             <Image
-              src="/images/payment-methods.png"
+              src="/images/payment-methods.jpg"
               alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
               width={733}
               height={347}
@@ -119,7 +119,7 @@ export default function Footer() {
           {/* System Status — image */}
           <div>
             <Image
-              src="/images/system-status.png"
+              src="/images/system-status.jpg"
               alt="System Status — All Systems Operational. 100% Secure."
               width={751}
               height={372}
