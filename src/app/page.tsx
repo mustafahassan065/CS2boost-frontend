@@ -13,10 +13,9 @@ const cards = [
 export default function Home() {
   return (
     <>
-      {/* ================= HERO ================= */}
+      {/* ================= HERO — narrower container = proportionally shorter ================= */}
       <section className="relative overflow-hidden bg-ink">
-        <div className="mx-auto grid max-w-[1600px] grid-cols-1 lg:grid-cols-2">
-          {/* LEFT — herotext.png */}
+        <div className="mx-auto grid max-w-[950px] grid-cols-1 lg:grid-cols-2">
           <div className="relative flex items-center">
             <Image
               src="/images/herotext.png"
@@ -34,7 +33,6 @@ export default function Home() {
             />
           </div>
 
-          {/* RIGHT — hero-photo.png */}
           <div className="relative">
             <Image
               src="/images/hero-photo.png"
@@ -56,25 +54,25 @@ export default function Home() {
               alt="Mission Objective: Rank Above — Fast Delivery, Pro Players, Secure & Safe"
               width={1501}
               height={848}
-              className="absolute right-4 top-4 hidden w-[38%] sm:block"
+              className="absolute right-4 top-2 hidden w-[36%] sm:block"
             />
           </div>
         </div>
       </section>
 
-      {/* ================= CHOOSE YOUR SERVICE ================= */}
-      <section className="border-t border-steel/30 bg-ink pt-4">
-        <div className="mx-auto max-w-[1600px] px-6">
+      {/* ================= CHOOSE YOUR SERVICE — narrower container ================= */}
+      <section className="bg-ink">
+        <div className="mx-auto max-w-[1300px] px-6">
           <div className="text-center">
-            <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-frost md:text-3xl">
+            <h2 className="font-display text-xl font-bold uppercase tracking-wide text-frost md:text-2xl">
               Choose Your Service
             </h2>
-            <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.25em] text-signal">
+            <p className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.25em] text-signal">
               Fast. Safe. Professional.
             </p>
           </div>
 
-          <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="mt-2 grid grid-cols-2 gap-1.5 sm:grid-cols-3 lg:grid-cols-6">
             {cards.map((c) => (
               <Link key={c.file} href="/order" className="block transition-transform duration-300 hover:-translate-y-1">
                 <Image src={`/images/${c.file}`} alt="" width={c.w} height={c.h} className="w-full" />
@@ -84,9 +82,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= STATS BAR ================= */}
-      <section className="bg-ink pt-2">
-        <div className="mx-auto max-w-[1600px] px-6">
+      {/* ================= STATS BAR — same narrower container ================= */}
+      <section className="bg-ink pt-1.5">
+        <div className="mx-auto max-w-[1300px] px-6">
           <Image
             src="/images/ratings3.jpg"
             alt="25+ Years of Experience, 50,000+ Hours Played, 1,500+ Europe Rank Faceit 2018, 356 World Rank Season 1 Premier, 300+ Offers Completed"
@@ -99,7 +97,7 @@ export default function Home() {
 
       {/* ================= HOW IT WORKS BAR ================= */}
       <section className="bg-ink">
-        <div className="mx-auto max-w-[1600px] px-6">
+        <div className="mx-auto max-w-[1300px] px-6">
           <Image
             src="/images/how-it-works3.jpg"
             alt="How It Works: Place Order, Booster Assigned, Boost In Progress, Order Completed"
@@ -112,7 +110,7 @@ export default function Home() {
 
       {/* ================= CTA BAR ================= */}
       <section className="bg-ink">
-        <div className="mx-auto max-w-[1600px] px-6">
+        <div className="mx-auto max-w-[1300px] px-6">
           <div className="relative">
             <Image
               src="/images/cta-bar.png"
