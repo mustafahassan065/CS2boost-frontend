@@ -25,10 +25,10 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-steel/40 bg-panel">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
-        <Link href="/" className="shrink-0">
-          <Image src="/images/logo.png" alt="CS2 Boost Pro" width={1598} height={885} priority className="h-14 w-auto" />
-        </Link>
+     <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-1.5">
+  <Link href="/" className="shrink-0">
+    <Image src="/images/logo.png" alt="CS2 Boost Pro" width={1598} height={885} priority className="h-12 w-auto" />
+  </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
           <Link href="/" className="font-display text-sm font-semibold uppercase tracking-wide text-frost transition-colors hover:text-signal">
@@ -66,7 +66,7 @@ export default function Navbar() {
             alt="Join our Discord"
             width={1766}
             height={450}
-            style={{ height: "44px", width: "auto" }}
+            style={{ height: "36px", width: "auto" }}
           />
         </a>
 
