@@ -47,16 +47,16 @@ export default function Footer() {
   return (
     <footer className="border-t border-steel/40 bg-panel">
       <div className="mx-auto max-w-[1600px] px-6 py-12">
-        <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap lg:items-start lg:justify-between">
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-6">
   {/* Logo + tagline + socials */}
-  <div className="max-w-xs">
+  <div className="shrink-0 lg:w-56">
     <Image src="/images/logo.png" alt="CS2 Boost Pro" width={1598} height={885} className="h-20 w-auto" />
     <p className="mt-4 text-sm text-muted">
       Professional CS2 boosting and coaching service. Fast, safe, and reliable.
     </p>
     <div className="mt-5 flex items-center gap-3">
       {socialLinks.map((s) => (
-        <a
+        
           key={s.label}
           href={s.href}
           target={s.href.startsWith("http") ? "_blank" : undefined}
@@ -70,7 +70,7 @@ export default function Footer() {
     </div>
   </div>
 
-  <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3">
+  <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:flex-1">
     <div>
       <h4 className="font-display text-sm font-semibold uppercase tracking-wide text-frost">Quick Links</h4>
       <ul className="mt-4 space-y-2 text-sm text-muted">
@@ -107,23 +107,23 @@ export default function Footer() {
     </div>
   </div>
 
-  {/* Payment Methods + System Status — fixed height, side-by-side, never wraps below each other */}
-  <div className="flex flex-row gap-4">
+  {/* Payment Methods + System Status — fixed, never wraps below */}
+  <div className="flex shrink-0 flex-row gap-3">
     <Image
-      src="/images/payment-methods.jpg"
+      src="/images/payment-methods.png"
       alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
       width={733}
       height={347}
       className="w-auto object-contain"
-      style={{ height: "190px" }}
+      style={{ height: "160px" }}
     />
     <Image
-      src="/images/system-status.jpg"
+      src="/images/system-status.png"
       alt="System Status — All Systems Operational. 100% Secure."
       width={751}
       height={372}
       className="w-auto object-contain"
-      style={{ height: "190px" }}
+      style={{ height: "160px" }}
     />
   </div>
 </div>
