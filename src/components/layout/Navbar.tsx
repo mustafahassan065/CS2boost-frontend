@@ -25,9 +25,9 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-steel/40 bg-panel">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
         <Link href="/" className="shrink-0">
-          <Image src="/images/logo.png" alt="CS2 Boost Pro" width={1598} height={885} priority className="h-20 w-auto" />
+          <Image src="/images/logo.png" alt="CS2 Boost Pro" width={1598} height={885} priority className="h-14 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -55,20 +55,18 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* DESKTOP Discord button — this is the one visible on your screenshot */}
-        <a
+        
           href={DISCORD_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden lg:block transition-transform duration-300 hover:scale-105"
-          
         >
           <Image
             src="/images/discord-button2.png"
             alt="Join our Discord"
             width={1766}
             height={450}
-            style={{ height: "50px", width: "auto" }}
+            style={{ height: "44px", width: "auto" }}
           />
         </a>
 
@@ -88,7 +86,6 @@ export default function Navbar() {
               <Link key={link.href} href={link.href} className="font-display text-sm font-semibold uppercase text-frost/80" onClick={() => setOpen(false)}>{link.label}</Link>
             ))}
 
-            {/* MOBILE Discord button */}
             <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer">
               <Image src="/images/discord-button.png" alt="Join our Discord" width={1766} height={496} className="h-11 w-auto" />
             </a>
