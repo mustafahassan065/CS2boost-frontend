@@ -19,7 +19,7 @@ export default function Home() {
         alt=""
         width={958}
         height={539}
-        className="pointer-events-none absolute left-0 top-24 -z-10 hidden w-[220px] opacity-70 xl:block"
+        className="pointer-events-none absolute left-0 top-24 -z-10 hidden w-[220px]  xl:block"
       />
       <Image
         src="/images/gabriel-sleiter.jpg"
