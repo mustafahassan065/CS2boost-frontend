@@ -15,7 +15,7 @@ export default function Home() {
     <>
       {/* ================= HERO — narrower container = proportionally shorter ================= */}
       <section className="relative overflow-hidden bg-ink">
-        <div className="mx-auto grid max-w-[950px] grid-cols-1 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-[800px] grid-cols-1 lg:grid-cols-2">
           <div className="relative flex items-center">
             <Image
               src="/images/herotext.png"
@@ -62,7 +62,7 @@ export default function Home() {
 
       {/* ================= CHOOSE YOUR SERVICE — narrower container ================= */}
       <section className="bg-ink">
-        <div className="mx-auto max-w-[1300px] px-6">
+        <div className="mx-auto max-w-[1150px] px-6">
           <div className="text-center">
             <h2 className="font-display text-xl font-bold uppercase tracking-wide text-frost md:text-2xl">
               Choose Your Service
@@ -89,7 +89,7 @@ export default function Home() {
             src="/images/ratings3.jpg"
             alt="25+ Years of Experience, 50,000+ Hours Played, 1,500+ Europe Rank Faceit 2018, 356 World Rank Season 1 Premier, 300+ Offers Completed"
             width={2712}
-            height={212}
+            height={150}
             className="w-full"
           />
         </div>
@@ -102,7 +102,7 @@ export default function Home() {
             src="/images/how-it-works3.jpg"
             alt="How It Works: Place Order, Booster Assigned, Boost In Progress, Order Completed"
             width={2704}
-            height={212}
+            height={150}
             className="w-full"
           />
         </div>
