@@ -16,13 +16,14 @@ export default function Home() {
       {/* Decorative side images to fill empty space on wide screens */}
      {/* LEFT side stack — Gabriel image + Loyalty Program (rewards table) */}
 {/* LEFT side stack — Gabriel image + Loyalty Program (rewards table) */}
-<div className="pointer-events-none absolute left-6 top-16 z-30 hidden w-[280px] flex-col gap-5 xl:flex">
+{/* LEFT side stack — Gabriel image + Loyalty Program (rewards table) */}
+<div className="pointer-events-none absolute left-10 top-14 z-30 hidden w-[240px] flex-col gap-5 xl:flex 2xl:left-16 2xl:w-[300px]">
   <Image src="/images/gabriel-sleiter.jpg" alt="" width={958} height={539} className="w-full opacity-80" />
   <Image src="/images/promo-program.jpg" alt="Loyalty Program — Earn LP with every order" width={958} height={539} className="w-full opacity-95" />
 </div>
 
 {/* RIGHT side stack — Gabriel image (not mirrored) + Loyalty Program (earn rewards CTA) */}
-<div className="pointer-events-none absolute right-6 top-16 z-30 hidden w-[280px] flex-col gap-5 xl:flex">
+<div className="pointer-events-none absolute right-10 top-14 z-30 hidden w-[240px] flex-col gap-5 xl:flex 2xl:right-16 2xl:w-[300px]">
   <Image src="/images/gabriel-sleiter.jpg" alt="" width={958} height={539} className="w-full opacity-80" />
   <Image src="/images/promo-rewards.jpg" alt="Loyalty Program — Earn Rewards" width={958} height={539} className="w-full opacity-95" />
 </div>
