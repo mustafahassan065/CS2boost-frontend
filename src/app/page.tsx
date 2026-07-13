@@ -16,13 +16,13 @@ export default function Home() {
     
 <div className="pointer-events-none absolute left-14 top-14 z-30 hidden w-[240px] flex-col gap-30 xl:flex 2xl:left-24 2xl:w-[300px]">
   <Image src="/images/gabriel-sleiter.jpg" alt="" width={958} height={539} className="w-full opacity-80" />
-  <Image src="/images/promo-program.jpg" alt="Loyalty Program — Earn LP with every order" width={958} height={539} className="w-full scale-150 opacity-95" />
+  <Image src="/images/promo-rewards.jpg" alt="Loyalty Program — Earn LP with every order" width={958} height={539} className="w-full scale-150 opacity-95" />
 </div>
 
 {/* RIGHT side stack — Gabriel image (not mirrored) + Loyalty Program (earn rewards CTA) */}
 <div className="pointer-events-none absolute right-14 top-14 z-30 hidden w-[240px] flex-col gap-30 xl:flex 2xl:right-24 2xl:w-[300px]">
   <Image src="/images/gabriel-sleiter.jpg" alt="" width={958} height={539} className="w-full opacity-80" />
-  <Image src="/images/promo-rewards.jpg" alt="Loyalty Program — Earn Rewards" width={958} height={539} className="w-full scale-150 opacity-95" />
+  <Image src="/images/promo-program.jpg" alt="Loyalty Program — Earn Rewards" width={958} height={539} className="w-full scale-150 opacity-95" />
 </div>
 
       {/* ================= HERO — narrower container = proportionally shorter ================= */}
