@@ -56,7 +56,7 @@ export default function Footer() {
             </p>
             <div className="mt-5 flex items-center gap-3">
               {socialLinks.map((s) => (
-                
+                <a
                   key={s.label}
                   href={s.href}
                   target={s.href.startsWith("http") ? "_blank" : undefined}
