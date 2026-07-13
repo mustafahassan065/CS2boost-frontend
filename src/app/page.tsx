@@ -58,19 +58,20 @@ export default function Home() {
             />
           </div>
         </div>
+        <div className="relative z-10 -mt-3 text-center">
+    <h2 className="font-display text-xl font-bold uppercase tracking-wide text-frost md:text-2xl">
+      Choose Your Service
+    </h2>
+    <p className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.25em] text-signal">
+      Fast. Safe. Professional.
+    </p>
+  </div>
       </section>
 
       {/* ================= CHOOSE YOUR SERVICE — narrower container ================= */}
       <section className="bg-ink">
-        <div className="mx-auto max-w-[1300px] px-6">
-          <div className="text-center">
-            <h2 className="font-display text-xl font-bold uppercase tracking-wide text-frost md:text-2xl">
-              Choose Your Service
-            </h2>
-            <p className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.25em] text-signal">
-              Fast. Safe. Professional.
-            </p>
-          </div>
+        <div className="mx-auto max-w-[850px] px-6">
+         
 
           <div className="mt-2 grid grid-cols-2 gap-1.5 sm:grid-cols-3 lg:grid-cols-6">
             {cards.map((c) => (
@@ -84,7 +85,7 @@ export default function Home() {
 
       {/* ================= STATS BAR — same narrower container ================= */}
       <section className="bg-ink pt-1.5">
-        <div className="mx-auto max-w-[1300px] px-6">
+        <div className="mx-auto max-w-[850px] px-6">
           <Image
             src="/images/ratings3.jpg"
             alt="25+ Years of Experience, 50,000+ Hours Played, 1,500+ Europe Rank Faceit 2018, 356 World Rank Season 1 Premier, 300+ Offers Completed"
@@ -97,7 +98,7 @@ export default function Home() {
 
       {/* ================= HOW IT WORKS BAR ================= */}
       <section className="bg-ink">
-        <div className="mx-auto max-w-[1300px] px-6">
+        <div className="mx-auto max-w-[850px] px-6">
           <Image
             src="/images/how-it-works3.jpg"
             alt="How It Works: Place Order, Booster Assigned, Boost In Progress, Order Completed"
@@ -110,7 +111,7 @@ export default function Home() {
 
       {/* ================= CTA BAR ================= */}
       <section className="bg-ink">
-        <div className="mx-auto max-w-[1300px] px-6">
+        <div className="mx-auto max-w-[850px] px-6">
           <div className="relative">
             <Image
               src="/images/cta-bar.png"
