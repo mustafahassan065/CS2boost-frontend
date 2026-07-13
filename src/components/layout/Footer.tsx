@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
 
 function DiscordSvg({ className = "" }: { className?: string }) {
   return (
@@ -57,7 +56,7 @@ export default function Footer() {
             </p>
             <div className="mt-5 flex items-center gap-3">
               {socialLinks.map((s) => (
-                <a
+                
                   key={s.label}
                   href={s.href}
                   target={s.href.startsWith("http") ? "_blank" : undefined}
@@ -106,28 +105,28 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Payment Methods — own column, brand-colored text, no white background */}
-          {/* Payment Methods — image box */}
-<div>
-  <Image
-    src="/images/paymentmethods.webp"
-    alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
-    width={733}
-    height={347}
-    className="w-full max-w-[240px]"
-  />
-</div>
+          {/* Payment Methods — image */}
+          <div>
+            <Image
+              src="/images/payment-methods.png"
+              alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
+              width={733}
+              height={347}
+              className="w-full max-w-[240px]"
+            />
+          </div>
 
-{/* System Status — image box */}
-<div>
-  <Image
-    src="/images/system status.webp"
-    alt="System Status — All Systems Operational. 100% Secure."
-    width={751}
-    height={372}
-    className="w-full max-w-[240px]"
-  />
-</div>
+          {/* System Status — image */}
+          <div>
+            <Image
+              src="/images/system-status.png"
+              alt="System Status — All Systems Operational. 100% Secure."
+              width={751}
+              height={372}
+              className="w-full max-w-[240px]"
+            />
+          </div>
+        </div>
 
         <div className="mt-10 border-t border-steel/40 pt-6 text-center text-xs text-muted">
           © {new Date().getFullYear()} CS2 Boost Pro. All rights reserved.
