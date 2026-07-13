@@ -107,38 +107,27 @@ export default function Footer() {
           </div>
 
           {/* Payment Methods — own column, brand-colored text, no white background */}
-          <div>
-            <h4 className="font-display text-sm font-semibold uppercase tracking-wide text-frost">Payment Methods</h4>
-           <div className="mt-4 flex flex-row gap-2">
-  <div className="flex items-center gap-1.5 rounded-md border border-steel/40 px-3 py-1.5 w-fit">
-    <span className="font-display text-sm font-bold italic" style={{ color: "#635BFF" }}>stripe</span>
-  </div>
-  <div className="flex items-center gap-0.5 rounded-md border border-steel/40 px-3 py-1.5 w-fit">
-    <span className="font-display text-sm font-bold" style={{ color: "#003087" }}>Pay</span>
-    <span className="font-display text-sm font-bold" style={{ color: "#009cde" }}>Pal</span>
-  </div>
+          {/* Payment Methods — image box */}
+<div>
+  <Image
+    src="/images/paymentmethods.webp"
+    alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
+    width={733}
+    height={347}
+    className="w-full max-w-[240px]"
+  />
 </div>
-            <p className="mt-3 text-xs text-muted">All payments are secured and encrypted.</p>
-          </div>
 
-          {/* System Status — own separate column */}
-          <div>
-            <h4 className="font-display text-sm font-semibold uppercase tracking-wide text-frost">System Status</h4>
-            <div className="mt-4 flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-green-400" />
-              <span className="font-display text-xs font-semibold uppercase tracking-wide text-green-400">
-                All Systems Operational
-              </span>
-            </div>
-              <p className="mt-3 text-xs text-muted">Your boost is safe with CS2boost Pro.</p>
-            <div className="mt-2 flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-green-400" />
-              <span className="font-display text-xs font-semibold uppercase tracking-wide text-green-400">
-                100% Secure
-              </span>
-            </div>
-          </div>
-        </div>
+{/* System Status — image box */}
+<div>
+  <Image
+    src="/images/system status.webp"
+    alt="System Status — All Systems Operational. 100% Secure."
+    width={751}
+    height={372}
+    className="w-full max-w-[240px]"
+  />
+</div>
 
         <div className="mt-10 border-t border-steel/40 pt-6 text-center text-xs text-muted">
           © {new Date().getFullYear()} CS2 Boost Pro. All rights reserved.
