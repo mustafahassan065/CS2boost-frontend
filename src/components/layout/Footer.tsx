@@ -47,86 +47,86 @@ export default function Footer() {
   return (
     <footer className="border-t border-steel/40 bg-panel">
       <div className="mx-auto max-w-[1600px] px-6 py-12">
-        <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-4 lg:grid-cols-7">
-          {/* Logo + tagline + socials */}
-          <div className="col-span-2">
-            <Image src="/images/logo.png" alt="CS2 Boost Pro" width={1598} height={885} className="h-20 w-auto" />
-            <p className="mt-4 max-w-xs text-sm text-muted">
-              Professional CS2 boosting and coaching service. Fast, safe, and reliable.
-            </p>
-            <div className="mt-5 flex items-center gap-3">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target={s.href.startsWith("http") ? "_blank" : undefined}
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-steel/50 text-signal transition-colors hover:border-signal hover:bg-signal/10"
-                >
-                  <s.icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
-          </div>
+        <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-4 lg:grid-cols-8">
+  {/* Logo + tagline + socials */}
+  <div className="col-span-2">
+    <Image src="/images/logo.png" alt="CS2 Boost Pro" width={1598} height={885} className="h-20 w-auto" />
+    <p className="mt-4 max-w-xs text-sm text-muted">
+      Professional CS2 boosting and coaching service. Fast, safe, and reliable.
+    </p>
+    <div className="mt-5 flex items-center gap-3">
+      {socialLinks.map((s) => (
+        <a
+          key={s.label}
+          href={s.href}
+          target={s.href.startsWith("http") ? "_blank" : undefined}
+          rel="noopener noreferrer"
+          aria-label={s.label}
+          className="flex h-9 w-9 items-center justify-center rounded-full border border-steel/50 text-signal transition-colors hover:border-signal hover:bg-signal/10"
+        >
+          <s.icon className="h-4 w-4" />
+        </a>
+      ))}
+    </div>
+  </div>
 
-          <div>
-            <h4 className="font-display text-sm font-semibold uppercase tracking-wide text-frost">Quick Links</h4>
-            <ul className="mt-4 space-y-2 text-sm text-muted">
-              <li><Link href="/" className="hover:text-signal">Home</Link></li>
-              <li><Link href="/boosting" className="hover:text-signal">Boosting</Link></li>
-              <li><Link href="/coaching" className="hover:text-signal">Coaching</Link></li>
-              <li><Link href="/about" className="hover:text-signal">About Us</Link></li>
-              <li><Link href="/reviews" className="hover:text-signal">Reviews</Link></li>
-              <li><Link href="/contact" className="hover:text-signal">Contact</Link></li>
-            </ul>
-          </div>
+  <div>
+    <h4 className="font-display text-sm font-semibold uppercase tracking-wide text-frost">Quick Links</h4>
+    <ul className="mt-4 space-y-2 text-sm text-muted">
+      <li><Link href="/" className="hover:text-signal">Home</Link></li>
+      <li><Link href="/boosting" className="hover:text-signal">Boosting</Link></li>
+      <li><Link href="/coaching" className="hover:text-signal">Coaching</Link></li>
+      <li><Link href="/about" className="hover:text-signal">About Us</Link></li>
+      <li><Link href="/reviews" className="hover:text-signal">Reviews</Link></li>
+      <li><Link href="/contact" className="hover:text-signal">Contact</Link></li>
+    </ul>
+  </div>
 
-          <div>
-            <h4 className="font-display text-sm font-semibold uppercase tracking-wide text-frost">Services</h4>
-            <ul className="mt-4 space-y-2 text-sm text-muted">
-              <li><Link href="/boosting/premier" className="hover:text-signal">Premier Boosting</Link></li>
-              <li><Link href="/boosting/competitive" className="hover:text-signal">Competitive Boosting</Link></li>
-              <li><Link href="/boosting/wingman" className="hover:text-signal">Wingman Boosting</Link></li>
-              <li><Link href="/boosting/placement" className="hover:text-signal">Placement Matches</Link></li>
-              <li><Link href="/boosting/win-boost" className="hover:text-signal">Win Boost</Link></li>
-              <li><Link href="/coaching" className="hover:text-signal">Coaching</Link></li>
-            </ul>
-          </div>
+  <div>
+    <h4 className="font-display text-sm font-semibold uppercase tracking-wide text-frost">Services</h4>
+    <ul className="mt-4 space-y-2 text-sm text-muted">
+      <li><Link href="/boosting/premier" className="hover:text-signal">Premier Boosting</Link></li>
+      <li><Link href="/boosting/competitive" className="hover:text-signal">Competitive Boosting</Link></li>
+      <li><Link href="/boosting/wingman" className="hover:text-signal">Wingman Boosting</Link></li>
+      <li><Link href="/boosting/placement" className="hover:text-signal">Placement Matches</Link></li>
+      <li><Link href="/boosting/win-boost" className="hover:text-signal">Win Boost</Link></li>
+      <li><Link href="/coaching" className="hover:text-signal">Coaching</Link></li>
+    </ul>
+  </div>
 
-          <div>
-            <h4 className="font-display text-sm font-semibold uppercase tracking-wide text-frost">Support</h4>
-            <ul className="mt-4 space-y-2 text-sm text-muted">
-              <li><Link href="/#faq" className="hover:text-signal">FAQ</Link></li>
-              <li><Link href="/terms" className="hover:text-signal">Terms of Service</Link></li>
-              <li><Link href="/privacy" className="hover:text-signal">Privacy Policy</Link></li>
-              <li><Link href="/refund" className="hover:text-signal">Refund Policy</Link></li>
-              <li><Link href="/contact" className="hover:text-signal">Contact</Link></li>
-            </ul>
-          </div>
+  <div>
+    <h4 className="font-display text-sm font-semibold uppercase tracking-wide text-frost">Support</h4>
+    <ul className="mt-4 space-y-2 text-sm text-muted">
+      <li><Link href="/#faq" className="hover:text-signal">FAQ</Link></li>
+      <li><Link href="/terms" className="hover:text-signal">Terms of Service</Link></li>
+      <li><Link href="/privacy" className="hover:text-signal">Privacy Policy</Link></li>
+      <li><Link href="/refund" className="hover:text-signal">Refund Policy</Link></li>
+      <li><Link href="/contact" className="hover:text-signal">Contact</Link></li>
+    </ul>
+  </div>
 
-          {/* Payment Methods — image */}
-          <div>
-            <Image
-              src="/images/payment-methods.jpg"
-              alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
-              width={733}
-              height={347}
-              className="w-full max-w-[240px]"
-            />
-          </div>
+  {/* Payment Methods — image, bigger + spans 2 columns for readability */}
+  <div className="col-span-2">
+    <Image
+      src="/images/payment-methods.jpg"
+      alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
+      width={733}
+      height={347}
+      className="w-full max-w-[340px]"
+    />
+  </div>
 
-          {/* System Status — image */}
-          <div>
-            <Image
-              src="/images/system-status.jpg"
-              alt="System Status — All Systems Operational. 100% Secure."
-              width={751}
-              height={372}
-              className="w-full max-w-[240px]"
-            />
-          </div>
-        </div>
+  {/* System Status — image, bigger + spans 2 columns for readability */}
+  <div className="col-span-2">
+    <Image
+      src="/images/system-status.jpg"
+      alt="System Status — All Systems Operational. 100% Secure."
+      width={751}
+      height={372}
+      className="w-full max-w-[340px]"
+    />
+  </div>
+</div>
 
         <div className="mt-10 border-t border-steel/40 pt-6 text-center text-xs text-muted">
           © {new Date().getFullYear()} CS2 Boost Pro. All rights reserved.
