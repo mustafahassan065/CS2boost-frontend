@@ -15,14 +15,14 @@ export default function Home() {
     <div className="relative">
       {/* Decorative side images to fill empty space on wide screens */}
       <Image
-        src="/images/gabriel-sleiter.jpg"
+        src="/images/gabriel.jpeg"
         alt=""
         width={958}
         height={539}
         className="pointer-events-none absolute left-0 top-24 -z-10 hidden w-[220px] opacity-70 xl:block"
       />
       <Image
-        src="/images/gabriel.jpg"
+        src="/images/gabriel.jpeg"
         alt=""
         width={958}
         height={539}
