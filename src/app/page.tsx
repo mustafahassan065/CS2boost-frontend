@@ -17,7 +17,49 @@ export default function Home() {
       {/* ================= HERO ================= */}
 <section className="relative overflow-hidden bg-ink">
   <div className="mx-auto grid max-w-[800px] grid-cols-1 lg:grid-cols-2">
-    {/* ... herotext.png aur hero-photo.png blocks bilkul same rahenge, kuch mat badlo ... */}
+   <div className="relative flex items-center">
+            <Image
+              src="/images/herotext.png"
+              alt="Premier Boosting & Coaching — Cheapest Prices, Highest Quality, 100% Safe"
+              width={1672}
+              height={876}
+              priority
+              className="w-full"
+            />
+            <Link
+              href="/order"
+              aria-label="Boost Now"
+              className="absolute z-20 cursor-pointer"
+              style={{ left: "21%", top: "84%", width: "44%", height: "10%" }}
+            />
+          </div>
+
+          <div className="relative">
+            <Image
+              src="/images/hero-photo.png"
+              alt="CS2 Boost Pro"
+              width={1672}
+              height={941}
+              priority
+              className="h-full w-full object-cover"
+            />
+            <Image
+              src="/images/lcd.png"
+              alt=""
+              width={1339}
+              height={912}
+              className="pointer-events-none absolute bottom-0 right-0 -z-10 hidden w-[55%] opacity-80 lg:block"
+            />
+            <Image
+              src="/images/mission-objective.png"
+              alt="Mission Objective: Rank Above — Fast Delivery, Pro Players, Secure & Safe"
+              width={1501}
+              height={848}
+              className="absolute right-4 top-2 hidden w-[36%] sm:block"
+            />
+          </div>
+        </div>
+      </section>
   </div>
 
   {/* Choose Your Service heading — overlaid on hero, no extra height */}
