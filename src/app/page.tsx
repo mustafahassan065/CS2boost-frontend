@@ -14,10 +14,9 @@ export default function Home() {
   return (
     <>
       {/* ================= HERO — narrower container = proportionally shorter ================= */}
-      {/* ================= HERO ================= */}
-<section className="relative overflow-hidden bg-ink">
-  <div className="mx-auto grid max-w-[800px] grid-cols-1 lg:grid-cols-2">
-   <div className="relative flex items-center">
+      <section className="relative overflow-hidden bg-ink">
+        <div className="mx-auto grid max-w-[950px] grid-cols-1 lg:grid-cols-2">
+          <div className="relative flex items-center">
             <Image
               src="/images/herotext.png"
               alt="Premier Boosting & Coaching — Cheapest Prices, Highest Quality, 100% Safe"
@@ -60,36 +59,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-  </div>
-
-  {/* Choose Your Service heading — overlaid on hero, no extra height */}
-  <div className="relative z-10 -mt-3 text-center">
-    <h2 className="font-display text-xl font-bold uppercase tracking-wide text-frost md:text-2xl">
-      Choose Your Service
-    </h2>
-    <p className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.25em] text-signal">
-      Fast. Safe. Professional.
-    </p>
-  </div>
-</section>
-
-{/* ================= CHOOSE YOUR SERVICE — ab sirf cards, heading upar chala gaya ================= */}
-<section className="bg-ink">
-  <div className="mx-auto max-w-[1150px] px-6">
-    <div className="mt-1 grid grid-cols-2 gap-1.5 sm:grid-cols-3 lg:grid-cols-6">
-      {cards.map((c) => (
-        <Link key={c.file} href="/order" className="block transition-transform duration-300 hover:-translate-y-1">
-          <Image src={`/images/${c.file}`} alt="" width={c.w} height={c.h} className="w-full" />
-        </Link>
-      ))}
-    </div>
-  </div>
-</section>
 
       {/* ================= CHOOSE YOUR SERVICE — narrower container ================= */}
       <section className="bg-ink">
-        <div className="mx-auto max-w-[850px] px-6">
-          
+        <div className="mx-auto max-w-[1300px] px-6">
+          <div className="text-center">
+            <h2 className="font-display text-xl font-bold uppercase tracking-wide text-frost md:text-2xl">
+              Choose Your Service
+            </h2>
+            <p className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.25em] text-signal">
+              Fast. Safe. Professional.
+            </p>
+          </div>
 
           <div className="mt-2 grid grid-cols-2 gap-1.5 sm:grid-cols-3 lg:grid-cols-6">
             {cards.map((c) => (
@@ -103,12 +84,12 @@ export default function Home() {
 
       {/* ================= STATS BAR — same narrower container ================= */}
       <section className="bg-ink pt-1.5">
-        <div className="mx-auto max-w-[850px] px-6">
+        <div className="mx-auto max-w-[1300px] px-6">
           <Image
             src="/images/ratings3.jpg"
             alt="25+ Years of Experience, 50,000+ Hours Played, 1,500+ Europe Rank Faceit 2018, 356 World Rank Season 1 Premier, 300+ Offers Completed"
             width={2712}
-            height={150}
+            height={212}
             className="w-full"
           />
         </div>
@@ -116,12 +97,12 @@ export default function Home() {
 
       {/* ================= HOW IT WORKS BAR ================= */}
       <section className="bg-ink">
-        <div className="mx-auto max-w-[850px] px-6">
+        <div className="mx-auto max-w-[1300px] px-6">
           <Image
             src="/images/how-it-works3.jpg"
             alt="How It Works: Place Order, Booster Assigned, Boost In Progress, Order Completed"
             width={2704}
-            height={150}
+            height={212}
             className="w-full"
           />
         </div>
@@ -129,7 +110,7 @@ export default function Home() {
 
       {/* ================= CTA BAR ================= */}
       <section className="bg-ink">
-        <div className="mx-auto max-w-[850px] px-6">
+        <div className="mx-auto max-w-[1300px] px-6">
           <div className="relative">
             <Image
               src="/images/cta-bar.png"
