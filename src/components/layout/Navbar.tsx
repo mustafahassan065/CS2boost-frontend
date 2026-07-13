@@ -55,7 +55,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        
+        <a
           href={DISCORD_URL}
           target="_blank"
           rel="noopener noreferrer"
