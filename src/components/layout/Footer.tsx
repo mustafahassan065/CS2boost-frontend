@@ -112,7 +112,7 @@ export default function Footer() {
     src="/images/payment-methods.jpg"
     alt="Payment Methods — Stripe, PayPal. All payments are secure and encrypted."
     width={733}
-    height={347}
+    height={500}
     className="h-32 w-auto object-contain sm:h-36"
   />
 </div>
@@ -123,7 +123,7 @@ export default function Footer() {
     src="/images/system-status.jpg"
     alt="System Status — All Systems Operational. 100% Secure."
     width={751}
-    height={372}
+    height={500}
     className="h-32 w-auto object-contain sm:h-36"
   />
 </div>
